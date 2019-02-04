@@ -16,11 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from fa import views
+
 #from django.urls import path, include
 
 urlpatterns = [
     path('',views.index,name='index'),
     path('a/',include('fa.urls')),
+    url('formpage/',)
     #path('', views.post_list, name='post_list'),
     path('admin/', admin.site.urls),
 ]
