@@ -22,7 +22,7 @@ from fa import views
 urlpatterns = [
     path('',views.index,name='index'),
     path('a/',include('fa.urls')),
-    url('formpage/',)
+    url('formpage/',),
     #path('', views.post_list, name='post_list'),
     path('admin/', admin.site.urls),
 ]

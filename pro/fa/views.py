@@ -12,4 +12,4 @@ def index(request):
 
 def form_name_view(request):
     form = forms.FormName()
-    return  render(request,'form_name.html','form':form)
+    return  render(request,'form_name.html')
