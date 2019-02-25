@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from fa.models import AccessRecord,Topic,Webpage
 from . import forms
+from forms import Form
 
 # Create your views here.
 
@@ -11,5 +12,5 @@ def index(request):
     return render(request , 'fa/index.html',context = date_dict)
 
 def form_name_view(request):
-    form = forms.FormName()
-    return  render(request,'form_name.html')
+    form = forms.Form()
+    return  render(request,'form_name.html',{'form':form})
